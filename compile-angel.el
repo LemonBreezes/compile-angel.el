@@ -43,10 +43,6 @@
 ;; guarantees that all .el files are both byte-compiled and native-compiled,
 ;; which significantly speeds up Emacs.
 ;;
-;; The compile-angel package was created to offer an alternative to auto-compile
-;; that guarantees all .el files are both byte-compiled and native-compiled,
-;; which significantly speeds up Emacs.
-;;
 ;; Before installing:
 ;; ------------------
 ;; It is highly recommended to set the following variables in your init file:
@@ -175,7 +171,7 @@ their corresponding file paths by scanning all directories in `load-path`.
 This significantly improves performance when looking up files, especially
 with large `load-path` values or when processing many features.
 
-The index is automatically rebuilt when `load-path` changes."
+The index is built when compile-angel is initialized."
   :type 'boolean
   :group 'compile-angel)
 
